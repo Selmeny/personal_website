@@ -1,8 +1,17 @@
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Certifications from "@/components/Certifications";
+import Contact from "@/components/Contact";
+
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <h1 className="text-4xl font-bold">Paul Brugman</h1>
-            <p className="text-xl">Cybersecurity Portfolio (Under Construction)</p>
+        <main className="bg-black min-h-screen">
+            <Hero />
+            <About />
+            <Experience />
+            <Certifications />
+            <Contact />
         </main>
     )
 }
