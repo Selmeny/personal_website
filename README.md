@@ -45,34 +45,3 @@ To run this project locally:
     ```
 
 4.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📂 Project Structure
-
-```bash
-src/
-├── app/
-│   ├── layout.tsx      # Root layout (fonts, global styles)
-│   ├── page.tsx        # Main landing page (sections assembly)
-│   └── globals.css     # Global Tailwind directives
-├── components/
-│   ├── Hero.tsx        # Landing section with animations
-│   ├── About.tsx       # Bio and introduction
-│   ├── Experience.tsx  # Interactive timeline
-│   ├── Certifications.tsx # Grid of degrees & certs
-│   └── Contact.tsx     # Footer and social links
-```
-
-## ⚠️ Troubleshooting
-
-**Build Failures (EPERM / OneDrive):**
-If you are running this project inside a OneDrive-synced folder on macOS/Windows, you may encounter `EPERM` (permission) errors during `npm install` or `build`.
-**Fix:** Move the project folder to a location *outside* of OneDrive (e.g., `~/Projects/`) and reinstall dependencies.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Based in Brisbane, Australia.
-[LinkedIn](https://www.linkedin.com/in/paulmbrugman/) | [Seek Profile](https://www.seek.com.au/profiles/paul-brugman-DvJggdsvwl)
