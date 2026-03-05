@@ -39,22 +39,22 @@ export default function Certifications() {
     ];
 
     return (
-        <section className="relative min-h-screen bg-zinc-900 px-4 py-20 text-white">
+        <section className="relative bg-zinc-900 px-4 py-10 text-white">
             <div className="container mx-auto max-w-6xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="mb-16 text-center"
+                    className="mb-8 text-center"
                 >
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-purple-400">Education & Certifications</h2>
                     <div className="mt-2 h-1 w-20 bg-purple-500/50 mx-auto rounded-full" />
                 </motion.div>
 
-                <div className="grid gap-12 md:grid-cols-2">
+                <div className="grid gap-8 md:grid-cols-2">
                     {/* Education Column */}
-                    <div className="space-y-8">
+                    <div className="space-y-4">
                         <div className="flex items-center gap-3 mb-6">
                             <GraduationCap className="text-purple-400 h-8 w-8" />
                             <h3 className="text-2xl font-semibold">Education</h3>
@@ -89,7 +89,7 @@ export default function Certifications() {
                     </div>
 
                     {/* Certifications Column */}
-                    <div className="space-y-8">
+                    <div className="space-y-4">
                         <div className="flex items-center gap-3 mb-6">
                             <Award className="text-green-400 h-8 w-8" />
                             <h3 className="text-2xl font-semibold">Certifications</h3>

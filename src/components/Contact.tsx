@@ -5,7 +5,7 @@ import { Mail, Linkedin, FileText, ArrowRight } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section id="contact" className="relative flex min-h-[50vh] flex-col items-center justify-center bg-black px-4 py-20 text-white">
+        <section id="contact" className="relative flex min-h-[50vh] flex-col items-center justify-center bg-black px-4 py-10 text-white">
             {/* Footer / Contact Content */}
             <div className="container mx-auto max-w-4xl text-center">
                 <motion.div

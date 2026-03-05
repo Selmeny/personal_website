@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 export default function About() {
     return (
-        <section className="relative flex min-h-[50vh] flex-col items-center justify-center bg-zinc-900 px-4 py-20 text-white">
+        <section className="relative flex min-h-[50vh] flex-col items-center justify-center bg-zinc-900 px-4 py-10 text-white">
             <div className="container mx-auto max-w-4xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="mb-12 text-center"
+                    className="mb-6 text-center"
                 >
                     <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-green-400">About Me</h2>
                     <div className="mt-2 h-1 w-20 bg-green-500/50 mx-auto rounded-full" />
                 </motion.div>
 
-                <div className="grid gap-12 md:grid-cols-2 items-center">
+                <div className="grid gap-8 md:grid-cols-2 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
