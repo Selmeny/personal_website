@@ -10,18 +10,21 @@ export default function Certifications() {
             degree: "Master of Information Technology",
             field: "Cybersecurity",
             year: "2026 – 2027",
+            url: "https://www.jcu.edu.au/",
         },
         {
             school: "Gamma College Sydney",
             degree: "Advanced Diploma of Information Technology",
             field: "IT",
             year: "2024 – 2026",
+            url: "https://gamma.edu.au/",
         },
         {
             school: "IPB University",
             degree: "Bachelor of Forestry",
             field: "Forestry",
             year: "2009 – 2014",
+            url: "https://ipb.ac.id/",
         },
     ];
 
@@ -65,8 +68,18 @@ export default function Certifications() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="rounded-xl bg-white/5 p-6 border border-white/10 hover:border-purple-500/50 transition-colors"
                             >
-                                <h4 className="text-lg font-bold">{edu.school}</h4>
-                                <p className="text-purple-300">{edu.degree}</p>
+                                <a
+                                    href={edu.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group/link flex items-center gap-2 inline-block"
+                                >
+                                    <h4 className="text-lg font-bold group-hover/link:text-purple-400 transition-colors">
+                                        {edu.school}
+                                    </h4>
+                                    <ExternalLink className="h-4 w-4 opacity-0 group-hover/link:opacity-100 transition-opacity text-purple-400" />
+                                </a>
+                                <p className="text-purple-300 mt-1">{edu.degree}</p>
                                 <div className="flex justify-between items-center mt-2 text-sm text-gray-400">
                                     <span>{edu.field}</span>
                                     <span>{edu.year}</span>
